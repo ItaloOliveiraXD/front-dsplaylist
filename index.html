@@ -56,7 +56,7 @@
 
                         <button>Ler mais...</button>
                     </div>
-                    
+
 
                     <div class="card-noticia-conteudo">
                         <h3>Título principal da notícia</h3>
@@ -134,20 +134,28 @@
         </section>
 
         <section id="inscricao">
-            <h2>Faça sua inscrição</h2>
-            <input type="text" placeholder="Nome completo">
-            <input type="email" placeholder="Email">
-            <label for="crtl-plataforma">Qual sua plataforma preferida?</label>
-            <div id="crtl-plataforma">
-                <input type="radio" name="plataforma" id="crtl-plataforma-pc">
-                <label for="crtl-plataforma-pc">PC</label>
-                <input type="radio" name="plataforma" id="crtl-plataforma-xbox">
-                <label for="crtl-plataforma-xbox">Xbox</label>
-                <input type="radio" name="plataforma" id="crtl-plataforma-playstation">
-                <label for="crtl-plataforma-playstation">Playstation</label>
+            <div class="container-inscricao">
+                <h2>Faça sua inscrição</h2>
+                <div class="form">
+                    <form action="#">
+                        <div class="input">
+                            <input type="text" placeholder="Nome completo">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <label for="crtl-plataforma">Qual sua plataforma preferida?</label>
+                        <div id="crtl-plataforma">
+                            <input type="radio" name="plataforma" id="crtl-plataforma-pc">
+                            <label for="crtl-plataforma-pc">PC</label>
+                            <input type="radio" name="plataforma" id="crtl-plataforma-xbox">
+                            <label for="crtl-plataforma-xbox">Xbox</label>
+                            <input type="radio" name="plataforma" id="crtl-plataforma-playstation">
+                            <label for="crtl-plataforma-playstation">Playstation</label>
+                        </div>
+                        <input type="checkbox" id="crtl-novidade" name="novidade">
+                        <label for="crtl-novidade">Deseja receber novidades?</label>
+                    </form>
+                </div>
             </div>
-            <input type="checkbox" id="crtl-novidade" name="novidade">
-            <label for="crtl-novidade">Deseja receber novidades?</label>
         </section>
     </main>
 </body>

@@ -188,3 +188,25 @@ nav a {
     font-weight: 700;
     margin-top: 10px;
 }
+
+#inscricao {
+    background-color: #FFFFFF;
+}
+
+.container-inscricao {
+    width: 960px;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.form {
+    width: 850px;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+    padding: 50px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
