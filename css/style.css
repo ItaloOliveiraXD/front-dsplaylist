@@ -58,7 +58,6 @@ nav a {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 50px;
 }
 .card-noticia-conteudo {
     width: 960px;
@@ -66,6 +65,7 @@ nav a {
     background-color: #F0F0F0;
     border-radius: 8px;
     padding: 30px;
+    box-shadow: 5px 2px 10px #555555;
 }
 
 .card-noticia-conteudo h3 {
@@ -107,6 +107,10 @@ nav a {
     font-size: 16px;
 }
 
+.container-noticias .btn-noticia {
+    height: 130px;
+}
+
 .btn-load-more {
     border-radius: 8px;
     border: none;
@@ -134,7 +138,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .container-jogo h2 {
@@ -154,10 +158,13 @@ nav a {
 .card-jogo {
     width: 300px;
     background-color: #FFFFFF;
+    box-shadow: 5px 2px 10px #555555;
+    border-radius: 8px;
 }
 
 .card-jogo-head img {
     width: 100%;
+    border-radius: 8px 8px 0  0;
 }
 
 .card-jogo-body {
@@ -196,17 +203,116 @@ nav a {
 .container-inscricao {
     width: 960px;
     margin: 0 auto;
-    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
-.form {
+.container-inscricao h2 {
+    color: #797979;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.container-form {
     width: 850px;
     margin: 0 auto;
     background-color: #F0F0F0;
     padding: 50px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #555555;
 }
 
 .input {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input .nome, .email {
+    font-size: 16px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #797979;
+    padding: 10px;
+}
+
+.container-form .label-plataforma {
+    font-size: 16px;
+    color: #797979;
+    font-weight: 400;
+}
+
+.container-form #crtl-plataforma {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.container-form #crtl-plataforma label {
+    color: #797979;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container-form .novidade {
+    margin-top: 15px;
+}
+
+.container-form .novidade label {
+    color: #797979;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container-form .btn-form {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container-form .btn-form-submit {
+    margin: 10px 10px 10px 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    background-color: #DD7E92;
+    border: none;
+    padding: 15px 80px;
+    transition: all .3s ease-out;
+}
+
+.container-form .btn-form-submit:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container-form .btn-form-submit:active {
+    font-size: 18px;
+}
+
+.container-form .btn-form-reset {
+    margin: 10px 0 10px 10px;
+    background-color: #FFFFFF;
+    color: #DD7E92;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid #DD7E92;
+    border-radius: 8px;
+    padding: 15px 80px;
+    transition: all .3s ease-out;
+}
+
+.container-form .btn-form-reset:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container-form .btn-form-reset:active {
+    font-size: 18px;
 }
