@@ -223,6 +223,7 @@ nav a {
     padding: 50px;
     border-radius: 8px;
     box-shadow: 5px 5px 10px #555555;
+    margin-bottom: 80px;
 }
 
 .input {
@@ -315,4 +316,46 @@ nav a {
 
 .container-form .btn-form-reset:active {
     font-size: 18px;
+}
+
+footer {
+    background-color: #383838;
+    color: #FFFFFF;
+}
+
+.container-footer {
+    width: 960px;
+    height: 190px;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+}
+
+.conteudo-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container-footer .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-footer .logo p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container-footer .termo p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container-footer .social {
+    display: flex;
+    gap: 15px;
 }
