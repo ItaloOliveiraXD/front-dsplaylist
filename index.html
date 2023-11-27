@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsivo.css">
     <title>HOME - DSPlayGamers</title>
 </head>
 
@@ -23,16 +23,16 @@
         </div>
     </header>
     <main>
-        <section id="noticias">
-            <div class="container-noticias">
+        <section class="centralizar" id="noticias">
+            <div class="container container-noticias">
                 <h2>Últimas Notícias</h2>
-                <div class="card-noticia">
+                <div class="container-card-noticias">
                     <div class="card-noticia-conteudo">
                         <h3>Título principal da notícia</h3>
                         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vitae ducimus aperiam.
                         </h4>
                         <p class="data">16/11/2023</p>
-                        <p class="conteudo-noticia">
+                        <p class="conteudo">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
                             vitae ducimus aperiam. Harum, in
                             dicta? Perspiciatis nam, facilis nesciunt, expedita esse labore officiis ut ipsam voluptates
@@ -63,7 +63,7 @@
                         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vitae ducimus aperiam.
                         </h4>
                         <p class="data">16/11/2023</p>
-                        <p class="conteudo-noticia">
+                        <p class="conteudo">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
                             vitae ducimus aperiam. Harum, in
                             dicta? Perspiciatis nam, facilis nesciunt, expedita esse labore officiis ut ipsam voluptates
@@ -94,14 +94,12 @@
             </div>
         </section>
 
-        <section id="jogos">
-            <div class="container-jogo">
+        <section class="centralizar" id="jogos">
+            <div class="container container-jogo">
                 <h2>Jogos</h2>
-                <div class="card">
+                <div class="container-card-jogo">
                     <div class="card-jogo">
-                        <div class="card-jogo-head">
-                            <img src="img/image 25.png" alt="capa do jogo">
-                        </div>
+                        <img src="img/image 25.png" alt="capa do jogo">
                         <div class="card-jogo-body">
                             <h3>Horizon Forbbinden West</h3>
                             <p><strong>De</strong> Sony Interactive Entertainment </p>
@@ -109,9 +107,7 @@
                         </div>
                     </div>
                     <div class="card-jogo">
-                        <div class="card-jogo-head">
-                            <img src="img/image 25.png" alt="capa do jogo">
-                        </div>
+                        <img src="img/image 25.png" alt="capa do jogo">
                         <div class="card-jogo-body">
                             <h3>Horizon Forbbinden West</h3>
                             <p><strong>De</strong> Sony Interactive Entertainment </p>
@@ -119,9 +115,7 @@
                         </div>
                     </div>
                     <div class="card-jogo">
-                        <div class="card-jogo-head">
-                            <img src="img/image 25.png" alt="capa do jogo">
-                        </div>
+                        <img src="img/image 25.png" alt="capa do jogo">
                         <div class="card-jogo-body">
                             <h3>Horizon Forbbinden West</h3>
                             <p><strong>De</strong> Sony Interactive Entertainment </p>
@@ -133,53 +127,50 @@
 
         </section>
 
-        <section id="inscricao">
-            <div class="container-inscricao">
+        <section class="centralizar" id="inscricao">
+            <div class="container container-inscricao">
                 <h2>Faça sua inscrição</h2>
-                <div class="container-form">
-                    <form action="#">
-                        <div class="input">
-                            <input type="text" placeholder="Nome completo" name="nome" class="nome">
-                            <input type="email" placeholder="Email" name="email" class="email">
-                        </div>
+                <form class="container-form" action="#">
+                    <div class="input-text">
+                        <input type="text" placeholder="Nome completo" name="nome" class="nome">
+                        <input type="email" placeholder="Email" name="email" class="email">
+                    </div>
 
-                        <label class="label-plataforma" for="crtl-plataforma">Qual sua plataforma preferida?</label>
-                        <div id="crtl-plataforma">
-                            <div>
-                                <input type="radio" name="plataforma" id="crtl-plataforma-pc">
-                                <label for="crtl-plataforma-pc">PC</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="plataforma" id="crtl-plataforma-xbox">
-                                <label for="crtl-plataforma-xbox">Xbox</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="plataforma" id="crtl-plataforma-playstation">
-                                <label for="crtl-plataforma-playstation">Playstation</label>
-                            </div>
+                    <label class="label-plataforma" for="crtl-plataforma">Qual sua plataforma preferida?</label>
+                    <div id="crtl-plataforma">
+                        <div>
+                            <input type="radio" name="plataforma" id="crtl-plataforma-pc">
+                            <label for="crtl-plataforma-pc">PC</label>
                         </div>
+                        <div>
+                            <input type="radio" name="plataforma" id="crtl-plataforma-xbox">
+                            <label for="crtl-plataforma-xbox">Xbox</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="plataforma" id="crtl-plataforma-playstation">
+                            <label for="crtl-plataforma-playstation">Playstation</label>
+                        </div>
+                    </div>
 
-                        <div class="novidade">
-                            <input type="checkbox" id="crtl-novidade" name="novidade">
-                            <label for="crtl-novidade">Deseja receber novidades?</label>
-                        </div>
+                    <div class="novidade">
+                        <input type="checkbox" id="crtl-novidade" name="novidade">
+                        <label for="crtl-novidade">Deseja receber novidades?</label>
+                    </div>
 
-                        <div class="btn-form">
-                            <div>
-                                <input class="btn-form-submit" type="submit" value="Enviar">
-                            </div>
-                            <div>
-                                <input class="btn-form-reset" type="reset" value="Limpar">
-                            </div>
+                    <div class="btn-form">
+                        <div>
+                            <input class="btn-form-submit" type="submit" value="Enviar">
                         </div>
-                    </form>
-                </div>
+                        <div>
+                            <input class="btn-form-reset" type="reset" value="Limpar">
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container-footer">
-            <div class="conteudo-footer">
+    <footer class="centralizar">
+        <div class="container container-footer">
                 <div class="logo">
                     <img src="img/sobre.png" alt="logo DSPlayGamers" width="50">
                     <p>DSPlayGamers</p>
@@ -192,7 +183,6 @@
                     <img src="img/instagram.png" alt="logo instagram" width="30">
                     <img src="img/whatsapp.png" alt="logo whatsapp" width="30">
                 </div>
-            </div>
         </div>
     </footer>
 </body>
